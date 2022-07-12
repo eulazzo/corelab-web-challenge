@@ -220,4 +220,6 @@ Apresentaçao do projeto no Youtube
 
 ## Sobre o projeto
 
-Na página Vehicles, usando o useEffect fiz o fetch dos veiculos salvos no banco de dados[SQLITE3]. Para ter acesso a outros componentes e evitar prop drilling usei ReduxToolkit e nesse primeiro momento fiz o dispatch para salvar os veiculos no estado global. 
+Na página Vehicles, usando o useEffect fiz o fetch dos veículos salvos no banco de dados[SQLITE3]. Para ter acesso a outros componentes e evitar prop drilling usei ReduxToolkit e nesse primeiro momento fiz o dispatch para salvar os veículos no estado global. Assim como os veículos, criei um estado global responsável para alternar de true para false e assim termos acesso ao Modal. Já com os dados setados, fiz o map na pagina vehicles para mostrar em tela. Encadeado ao map, utilizei o método filter, para filtrar veiculos ao passo que for digitado no component SEARCH.
+
+Já no componente CARD, tem-se a funcionalidade de deletar ,favoritar,editar o veículo. Para deletar, ja com a rota definida no backend, forneci o ID necessário para tal ação, logo em seguida fiz o dispatch para remover, usando filter, o veículo do estado global. Quando clicado no edit ICON do card, fiz o dispatch para setar o valor para true e assim abrir o modal de edição.
