@@ -58,6 +58,7 @@ const VehiclesPage = () => {
           <p className={styles.favorites}>Favoritos</p>
         )}
 
+        {/* TODO:Refactor this*/}
         <div className={styles.wrapper_grid}>
           {favoritesVehicles
             ?.filter((car) => filterCarByAttributes(car, search))

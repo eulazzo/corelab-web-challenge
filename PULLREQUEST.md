@@ -217,4 +217,7 @@ Apresentaçao do projeto no Youtube
       public updatedAt: DateTime
     }
   ```
- 
+
+## Sobre o projeto
+
+Na página Vehicles, usando o useEffect fiz o fetch dos veiculos salvos no banco de dados[SQLITE3]. Para ter acesso a outros componentes e evitar prop drilling usei ReduxToolkit e nesse primeiro momento fiz o dispatch para salvar os veiculos no estado global. 
