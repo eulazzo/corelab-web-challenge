@@ -1,19 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { IVehicle } from "../types/Vehicle";
 
-
-type Vehicle= {
-  id: number,
-  name: string,
-  description: string,
-  plate:string,
-  is_favorite: boolean,
-  year: number,
-  color: string,
-  price: number,
-  created_at?:Date,
-  updated_at?: Date,
-}
+ 
 
 type InitialState = {
   vehicles:IVehicle[],
